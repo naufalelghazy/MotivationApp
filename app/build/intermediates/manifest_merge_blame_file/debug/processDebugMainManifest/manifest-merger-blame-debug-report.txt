@@ -1,0 +1,442 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.motivasi.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:5:5-77
+11-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:6:5-81
+12-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:5-68
+13-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:22-65
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
+14-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:22-76
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:5-77
+15-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:22-74
+16
+17    <permission
+17-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.motivasi.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.motivasi.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:8:5-40:19
+24        android:name="com.motivasi.app.MotivasiApp"
+24-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:9:9-36
+25        android:allowBackup="true"
+25-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:10:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.12.0] C:\Users\Venom\.gradle\caches\8.13\transforms\077df947e625d0ec6927222820de6f71\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/ic_launcher"
+29-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:11:9-43
+30        android:label="@string/app_name"
+30-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:12:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:13:9-54
+32        android:supportsRtl="true"
+32-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:14:9-35
+33        android:theme="@style/Theme.MotivasiApp" >
+33-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:15:9-49
+34        <activity
+34-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:18:9-26:20
+35            android:name="com.motivasi.app.MainActivity"
+35-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:19:13-41
+36            android:exported="true"
+36-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:20:13-36
+37            android:theme="@style/Theme.MotivasiApp" >
+37-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:21:13-53
+38            <intent-filter>
+38-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:22:13-25:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:23:17-69
+39-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:23:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:24:17-77
+41-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:24:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <!-- Widget Receiver -->
+46        <receiver
+46-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:29:9-38:20
+47            android:name="com.motivasi.app.widget.MotivationWidgetReceiver"
+47-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:30:13-60
+48            android:exported="true" >
+48-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:31:13-36
+49            <intent-filter>
+49-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:32:13-34:29
+50                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+50-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:33:17-84
+50-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:33:25-81
+51            </intent-filter>
+52
+53            <meta-data
+53-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:35:13-37:66
+54                android:name="android.appwidget.provider"
+54-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:36:17-58
+55                android:resource="@xml/motivation_widget_info" />
+55-->E:\project\MotivationApp\app\src\main\AndroidManifest.xml:37:17-63
+56        </receiver>
+57
+58        <activity
+58-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:23:9-27:40
+59            android:name="androidx.glance.appwidget.action.ActionTrampolineActivity"
+59-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:24:13-85
+60            android:enabled="true"
+60-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:25:13-35
+61            android:excludeFromRecents="true"
+61-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:26:13-46
+62            android:exported="false" />
+62-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:27:13-37
+63        <activity
+63-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:28:9-35:81
+64            android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity"
+64-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:29:13-94
+65            android:enabled="true"
+65-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:30:13-35
+66            android:exported="false"
+66-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:31:13-37
+67            android:launchMode="singleInstance"
+67-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:32:13-48
+68            android:noHistory="true"
+68-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:33:13-37
+69            android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline"
+69-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:34:13-91
+70            android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline" />
+70-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:35:13-78
+71
+72        <receiver
+72-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:37:9-40:40
+73            android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"
+73-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:38:13-92
+74            android:enabled="true"
+74-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:39:13-35
+75            android:exported="false" />
+75-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:40:13-37
+76        <receiver
+76-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:41:9-48:20
+77            android:name="androidx.glance.appwidget.MyPackageReplacedReceiver"
+77-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:42:13-79
+78            android:enabled="true"
+78-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:43:13-35
+79            android:exported="false" >
+79-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:44:13-37
+80            <intent-filter>
+80-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:45:13-47:29
+81                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+81-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:46:17-84
+81-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:46:25-81
+82            </intent-filter>
+83        </receiver>
+84
+85        <service
+85-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:50:9-53:72
+86            android:name="androidx.glance.appwidget.GlanceRemoteViewsService"
+86-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:51:13-78
+87            android:exported="true"
+87-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:52:13-36
+88            android:permission="android.permission.BIND_REMOTEVIEWS" />
+88-->[androidx.glance:glance-appwidget:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\c5c6fa4f39429538314ea48504ae3368\transformed\glance-appwidget-1.0.0\AndroidManifest.xml:53:13-69
+89
+90        <activity
+90-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\88b44ea4332a08e672ca8b232f675ff7\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+91            android:name="androidx.compose.ui.tooling.PreviewActivity"
+91-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\88b44ea4332a08e672ca8b232f675ff7\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+92            android:exported="true" />
+92-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\88b44ea4332a08e672ca8b232f675ff7\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+93
+94        <provider
+94-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:29:9-37:20
+95            android:name="androidx.startup.InitializationProvider"
+95-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:30:13-67
+96            android:authorities="com.motivasi.app.androidx-startup"
+96-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:31:13-68
+97            android:exported="false" >
+97-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:32:13-37
+98            <meta-data
+98-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:34:13-36:52
+99                android:name="androidx.work.WorkManagerInitializer"
+99-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:35:17-68
+100                android:value="androidx.startup" />
+100-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:36:17-49
+101            <meta-data
+101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\20f7119af19e0f6e109ea255c013b517\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+102-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\20f7119af19e0f6e109ea255c013b517\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+103                android:value="androidx.startup" />
+103-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\20f7119af19e0f6e109ea255c013b517\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+104            <meta-data
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Venom\.gradle\caches\8.13\transforms\dea38af7e165f979b9280ca9502d0706\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+105-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Venom\.gradle\caches\8.13\transforms\dea38af7e165f979b9280ca9502d0706\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+106                android:value="androidx.startup" />
+106-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Venom\.gradle\caches\8.13\transforms\dea38af7e165f979b9280ca9502d0706\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+107            <meta-data
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+109                android:value="androidx.startup" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+110        </provider>
+111
+112        <service
+112-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:39:9-45:35
+113            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+113-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:40:13-88
+114            android:directBootAware="false"
+114-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:41:13-44
+115            android:enabled="@bool/enable_system_alarm_service_default"
+115-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:42:13-72
+116            android:exported="false" />
+116-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:43:13-37
+117        <service
+117-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:46:9-52:35
+118            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+118-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:47:13-84
+119            android:directBootAware="false"
+119-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:48:13-44
+120            android:enabled="@bool/enable_system_job_service_default"
+120-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:49:13-70
+121            android:exported="true"
+121-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:50:13-36
+122            android:permission="android.permission.BIND_JOB_SERVICE" />
+122-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:51:13-69
+123        <service
+123-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:53:9-59:35
+124            android:name="androidx.work.impl.foreground.SystemForegroundService"
+124-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:54:13-81
+125            android:directBootAware="false"
+125-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:55:13-44
+126            android:enabled="@bool/enable_system_foreground_service_default"
+126-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:56:13-77
+127            android:exported="false" />
+127-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:57:13-37
+128
+129        <receiver
+129-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:61:9-66:35
+130            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+130-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:62:13-88
+131            android:directBootAware="false"
+131-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:63:13-44
+132            android:enabled="true"
+132-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:64:13-35
+133            android:exported="false" />
+133-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:65:13-37
+134        <receiver
+134-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:67:9-77:20
+135            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+135-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:68:13-106
+136            android:directBootAware="false"
+136-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:69:13-44
+137            android:enabled="false"
+137-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:70:13-36
+138            android:exported="false" >
+138-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:71:13-37
+139            <intent-filter>
+139-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:73:13-76:29
+140                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+140-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:17-87
+140-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:25-84
+141                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+141-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:17-90
+141-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:25-87
+142            </intent-filter>
+143        </receiver>
+144        <receiver
+144-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:78:9-88:20
+145            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+145-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:79:13-104
+146            android:directBootAware="false"
+146-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:80:13-44
+147            android:enabled="false"
+147-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:81:13-36
+148            android:exported="false" >
+148-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:82:13-37
+149            <intent-filter>
+149-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:84:13-87:29
+150                <action android:name="android.intent.action.BATTERY_OKAY" />
+150-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:17-77
+150-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:25-74
+151                <action android:name="android.intent.action.BATTERY_LOW" />
+151-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:17-76
+151-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:25-73
+152            </intent-filter>
+153        </receiver>
+154        <receiver
+154-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:89:9-99:20
+155            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+155-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:90:13-104
+156            android:directBootAware="false"
+156-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:91:13-44
+157            android:enabled="false"
+157-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:92:13-36
+158            android:exported="false" >
+158-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:93:13-37
+159            <intent-filter>
+159-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:95:13-98:29
+160                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+160-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:17-83
+160-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:25-80
+161                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+161-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:17-82
+161-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:25-79
+162            </intent-filter>
+163        </receiver>
+164        <receiver
+164-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:100:9-109:20
+165            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+165-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:101:13-103
+166            android:directBootAware="false"
+166-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:102:13-44
+167            android:enabled="false"
+167-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:103:13-36
+168            android:exported="false" >
+168-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:104:13-37
+169            <intent-filter>
+169-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:106:13-108:29
+170                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+170-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:17-79
+170-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:25-76
+171            </intent-filter>
+172        </receiver>
+173        <receiver
+173-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:110:9-121:20
+174            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+174-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:111:13-88
+175            android:directBootAware="false"
+175-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:112:13-44
+176            android:enabled="false"
+176-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:113:13-36
+177            android:exported="false" >
+177-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:114:13-37
+178            <intent-filter>
+178-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:116:13-120:29
+179                <action android:name="android.intent.action.BOOT_COMPLETED" />
+179-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:117:17-79
+179-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:117:25-76
+180                <action android:name="android.intent.action.TIME_SET" />
+180-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:17-73
+180-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:25-70
+181                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+181-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:17-81
+181-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:25-78
+182            </intent-filter>
+183        </receiver>
+184        <receiver
+184-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:122:9-131:20
+185            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+185-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:123:13-99
+186            android:directBootAware="false"
+186-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:124:13-44
+187            android:enabled="@bool/enable_system_alarm_service_default"
+187-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:125:13-72
+188            android:exported="false" >
+188-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:126:13-37
+189            <intent-filter>
+189-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:128:13-130:29
+190                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+190-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:17-98
+190-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:25-95
+191            </intent-filter>
+192        </receiver>
+193        <receiver
+193-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:132:9-142:20
+194            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+194-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:133:13-78
+195            android:directBootAware="false"
+195-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:134:13-44
+196            android:enabled="true"
+196-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:135:13-35
+197            android:exported="true"
+197-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:136:13-36
+198            android:permission="android.permission.DUMP" >
+198-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:137:13-57
+199            <intent-filter>
+199-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:139:13-141:29
+200                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+200-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:17-88
+200-->[androidx.work:work-runtime:2.9.0] C:\Users\Venom\.gradle\caches\8.13\transforms\5146e6ced95508af1d43648af3a6803f\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:25-85
+201            </intent-filter>
+202        </receiver>
+203
+204        <activity
+204-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\930e5554066e857862626fbadf538f60\transformed\ui-test-manifest-1.6.0\AndroidManifest.xml:23:9-25:39
+205            android:name="androidx.activity.ComponentActivity"
+205-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\930e5554066e857862626fbadf538f60\transformed\ui-test-manifest-1.6.0\AndroidManifest.xml:24:13-63
+206            android:exported="true" />
+206-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\Venom\.gradle\caches\8.13\transforms\930e5554066e857862626fbadf538f60\transformed\ui-test-manifest-1.6.0\AndroidManifest.xml:25:13-36
+207
+208        <service
+208-->[androidx.core:core-remoteviews:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\2357645009032b911005c8a095cbdb18\transformed\core-remoteviews-1.0.0\AndroidManifest.xml:24:9-27:63
+209            android:name="androidx.core.widget.RemoteViewsCompatService"
+209-->[androidx.core:core-remoteviews:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\2357645009032b911005c8a095cbdb18\transformed\core-remoteviews-1.0.0\AndroidManifest.xml:25:13-73
+210            android:permission="android.permission.BIND_REMOTEVIEWS" />
+210-->[androidx.core:core-remoteviews:1.0.0] C:\Users\Venom\.gradle\caches\8.13\transforms\2357645009032b911005c8a095cbdb18\transformed\core-remoteviews-1.0.0\AndroidManifest.xml:26:13-69
+211        <service
+211-->[androidx.room:room-runtime:2.5.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d45c3f4bcc7988a9b0c15ab306d41ebe\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+212            android:name="androidx.room.MultiInstanceInvalidationService"
+212-->[androidx.room:room-runtime:2.5.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d45c3f4bcc7988a9b0c15ab306d41ebe\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+213            android:directBootAware="true"
+213-->[androidx.room:room-runtime:2.5.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d45c3f4bcc7988a9b0c15ab306d41ebe\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+214            android:exported="false" />
+214-->[androidx.room:room-runtime:2.5.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d45c3f4bcc7988a9b0c15ab306d41ebe\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+215
+216        <receiver
+216-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+217            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+218            android:directBootAware="false"
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+219            android:enabled="true"
+219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+220            android:exported="true"
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+221            android:permission="android.permission.DUMP" >
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+222            <intent-filter>
+222-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+223                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+224            </intent-filter>
+225            <intent-filter>
+225-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+226                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+227            </intent-filter>
+228            <intent-filter>
+228-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+229                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+229-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+229-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+230            </intent-filter>
+231            <intent-filter>
+231-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+232                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Venom\.gradle\caches\8.13\transforms\d020308d6d24858ba47c2326b4845786\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+233            </intent-filter>
+234        </receiver>
+235    </application>
+236
+237</manifest>

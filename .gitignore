@@ -1,0 +1,26 @@
+# Project exclude paths
+/.gradle/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# IDE
+/.idea/
+*.iml
+*.iws
+*.ipr
+
+# Keystore
+*.jks
+*.keystore
+
+# Log
+*.log
+
+# Local configuration
+local.properties
+
+# OS
+.DS_Store
+Thumbs.db

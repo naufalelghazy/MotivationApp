@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Motivasi</string>
+    <string name="widget_description">Widget motivasi harian untuk membangun rasa percaya diri</string>
+    <string name="widget_default_quote">"Kamu lebih kuat dari yang kamu pikirkan. Percayalah pada dirimu sendiri."</string>
+</resources>

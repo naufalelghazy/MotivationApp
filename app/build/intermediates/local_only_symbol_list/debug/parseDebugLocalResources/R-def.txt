@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color background_dark
+color primary
+color primary_dark
+color secondary
+color surface_dark
+color text_primary
+color text_secondary
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_notification
+drawable widget_background
+id widget_author
+id widget_quote
+layout widget_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string widget_default_quote
+string widget_description
+style Theme.MotivasiApp
+xml motivation_widget_info

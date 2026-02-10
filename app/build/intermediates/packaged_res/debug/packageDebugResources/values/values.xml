@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dark">#12101A</color>
+    <color name="primary">#E8A838</color>
+    <color name="primary_dark">#D4922A</color>
+    <color name="secondary">#F5C16C</color>
+    <color name="surface_dark">#1A1520</color>
+    <color name="text_primary">#F5F0EA</color>
+    <color name="text_secondary">#B8A8C8</color>
+    <string name="app_name">Motivasi</string>
+    <string name="widget_default_quote">"Kamu lebih kuat dari yang kamu pikirkan. Percayalah pada dirimu sendiri."</string>
+    <string name="widget_description">Widget motivasi harian untuk membangun rasa percaya diri</string>
+    <style name="Theme.MotivasiApp" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/secondary</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>
