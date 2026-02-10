@@ -59,12 +59,18 @@ class PreferencesManager(context: Context) {
         val intervalMillis = intervalHours.toLong() * 60 * 60 * 1000
 
         return if (lastUpdateTime == 0L || (now - lastUpdateTime) >= intervalMillis) {
-            val quote = QuoteRepository.getQuoteForDate(now, intervalHours)
+            // Calculate day of year (1-366)
+            val calendar = java.util.Calendar.getInstance()
+            calendar.timeInMillis = now
+            val dayOfYear = calendar.get(java.util.Calendar.DAY_OF_YEAR)
+            
+            val quote = QuoteRepository.getQuoteForDate(dayOfYear)
             lastQuoteIndex = quote.id
             lastUpdateTime = now
             quote
         } else {
-            QuoteRepository.getQuoteByIndex(lastQuoteIndex - 1)
+            // Get quote by ID, fallback to first quote if not found
+            QuoteRepository.getQuoteById(lastQuoteIndex) ?: QuoteRepository.getAllQuotes().first()
         }
     }
 
