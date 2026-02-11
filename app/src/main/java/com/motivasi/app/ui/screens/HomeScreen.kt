@@ -6,6 +6,11 @@ import android.widget.Toast
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
+import androidx.glance.appwidget.GlanceAppWidgetManager
+import com.motivasi.app.widget.MotivationWidget
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -67,6 +72,20 @@ fun HomeScreen() {
         onRefreshClick = {
             currentQuote = prefsManager.forceRefreshQuote()
             isFavorite = prefsManager.isFavorite(currentQuote.id)
+            
+            // Update widget to show new quote
+            CoroutineScope(Dispatchers.IO).launch {
+                try {
+                    val manager = GlanceAppWidgetManager(context)
+                    val widget = MotivationWidget()
+                    val glanceIds = manager.getGlanceIds(widget.javaClass)
+                    glanceIds.forEach { glanceId ->
+                        widget.update(context, glanceId)
+                    }
+                } catch (e: Exception) {
+                    // Widget might not be placed on home screen
+                }
+            }
         },
         onShareClick = { shareQuote(context, currentQuote) },
         onCopyClick = {
