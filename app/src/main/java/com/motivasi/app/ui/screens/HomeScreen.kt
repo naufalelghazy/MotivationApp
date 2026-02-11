@@ -6,10 +6,7 @@ import android.widget.Toast
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
-import androidx.work.OneTimeWorkRequestBuilder
-import androidx.work.OutOfQuotaPolicy
-import androidx.work.WorkManager
-import com.motivasi.app.worker.QuoteUpdateWorker
+import com.motivasi.app.widget.MotivationWidgetReceiver
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -72,18 +69,11 @@ fun HomeScreen() {
             currentQuote = prefsManager.forceRefreshQuote()
             isFavorite = prefsManager.isFavorite(currentQuote.id)
             
-            // Update widget using WorkManager (more reliable on HyperOS/MIUI)
-            val updateRequest = OneTimeWorkRequestBuilder<QuoteUpdateWorker>()
-                .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
-                .build()
-            WorkManager.getInstance(context).enqueue(updateRequest)
-            
-            // Notify user that widget will update
-            Toast.makeText(
-                context,
-                "Widget akan update dalam beberapa detik ⏳",
-                Toast.LENGTH_SHORT
-            ).show()
+            // Send broadcast to update widget immediately
+            val widgetIntent = Intent(context, MotivationWidgetReceiver::class.java).apply {
+                action = MotivationWidgetReceiver.ACTION_REFRESH_WIDGET
+            }
+            context.sendBroadcast(widgetIntent)
         },
         onShareClick = { shareQuote(context, currentQuote) },
         onCopyClick = {
