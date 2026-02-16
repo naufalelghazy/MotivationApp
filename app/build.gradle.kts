@@ -11,8 +11,8 @@ android {
         applicationId = "com.motivasi.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -30,6 +30,19 @@ android {
             )
         }
     }
+
+    // Split APK per ABI (CPU Architecture)
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            // Include specific ABIs
+            include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+            // Also generate a universal APK that works on all devices
+            isUniversalApk = true
+        }
+    }
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
