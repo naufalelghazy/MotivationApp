@@ -42,7 +42,7 @@ class MotivationWidget : GlanceAppWidget() {
                 .fillMaxSize()
                 .cornerRadius(20.dp)
                 .background(Color(0xFF1A1520))
-                .padding(16.dp),
+                .padding(20.dp),
             contentAlignment = Alignment.Center
         ) {
             Column(
@@ -60,7 +60,7 @@ class MotivationWidget : GlanceAppWidget() {
                         text = "✨ Motivasi",
                         style = TextStyle(
                             color = ColorProvider(Color(0xFFE8A838)),
-                            fontSize = 12.sp,
+                            fontSize = 16.sp,
                             fontWeight = FontWeight.Bold
                         ),
                         modifier = GlanceModifier
@@ -72,7 +72,7 @@ class MotivationWidget : GlanceAppWidget() {
                     Text(
                         text = "🔄",
                         style = TextStyle(
-                            fontSize = 16.sp
+                            fontSize = 20.sp
                         ),
                         modifier = GlanceModifier
                             .padding(4.dp)
@@ -81,14 +81,14 @@ class MotivationWidget : GlanceAppWidget() {
                     )
                 }
 
-                Spacer(modifier = GlanceModifier.height(8.dp))
+                Spacer(modifier = GlanceModifier.height(12.dp))
 
                 // Quote (clickable → open app)
                 Text(
                     text = "\"$quoteText\"",
                     style = TextStyle(
                         color = ColorProvider(Color(0xFFF5F0EA)),
-                        fontSize = 14.sp,
+                        fontSize = 18.sp,
                         textAlign = TextAlign.Center
                     ),
                     maxLines = 5,
@@ -97,14 +97,14 @@ class MotivationWidget : GlanceAppWidget() {
                         .clickable(actionStartActivity<MainActivity>())
                 )
 
-                Spacer(modifier = GlanceModifier.height(8.dp))
+                Spacer(modifier = GlanceModifier.height(12.dp))
 
                 // Author
                 Text(
                     text = "— $authorText",
                     style = TextStyle(
                         color = ColorProvider(Color(0xFFB8A8C8)),
-                        fontSize = 11.sp,
+                        fontSize = 14.sp,
                         fontStyle = FontStyle.Italic
                     )
                 )
