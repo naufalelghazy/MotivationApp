@@ -207,18 +207,18 @@ fun HomeScreenContent(
                         )
                 ) {
                     Column(
-                        modifier = Modifier.padding(28.dp),
+                        modifier = Modifier.padding(24.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         // Opening quote mark
                         Text(
                             text = "❝",
-                            fontSize = 48.sp,
+                            fontSize = 40.sp,
                             color = PrimaryGold.copy(alpha = 0.5f),
-                            lineHeight = 48.sp
+                            lineHeight = 40.sp
                         )
 
-                        Spacer(modifier = Modifier.height(8.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         // Quote text
                         Text(
@@ -228,10 +228,10 @@ fun HomeScreenContent(
                             color = TextPrimary,
                             textAlign = TextAlign.Center,
                             lineHeight = 32.sp,
-                            modifier = Modifier.padding(horizontal = 8.dp)
+                            modifier = Modifier.padding(horizontal = 4.dp)
                         )
 
-                        Spacer(modifier = Modifier.height(20.dp))
+                        Spacer(modifier = Modifier.height(16.dp))
 
                         // Divider
                         Box(
@@ -249,7 +249,7 @@ fun HomeScreenContent(
                                 )
                         )
 
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         // Author
                         Text(

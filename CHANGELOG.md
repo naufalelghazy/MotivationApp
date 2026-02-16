@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-16
+
+### Added
+
+- 🔄 **Widget refresh button** - Tap the 🔄 icon on the widget to instantly refresh the quote without opening the app
+- 📡 **Broadcast-based widget sync** - Widget now updates immediately when you refresh in the app (fixed HyperOS/MIUI delay issue)
+- 📦 **APK size optimization** - Enabled R8 minification and resource shrinking (APK size reduced to ~1.6 MB)
+- 🏗️ **ABI splits configuration** - Support for generating architecture-specific APKs
+
+### Fixed
+
+- 🐛 Fixed widget not updating when refresh button is tapped in the app (especially on Xiaomi devices)
+- 🐛 Fixed race condition between app and widget data synchronization
+- 🐛 Fixed `getQuoteForDate()` parameter mismatch in `PreferencesManager`
+- 🐛 Fixed unresolved reference to `getQuoteByIndex()` - replaced with `getQuoteById()`
+- 🐛 Fixed widget hanging on old quote after manual refresh
+
+### Changed
+
+- ⚡ Widget refresh now uses Glance `ActionCallback` for instant updates (no IPC delay)
+- ⚡ App-to-widget communication now uses broadcast instead of WorkManager for faster sync
+- 🎨 Widget UI updated with header row containing app label and refresh button
+
+### Technical Improvements
+
+- Added `ACTION_REFRESH_WIDGET` broadcast action for widget updates
+- Added `RefreshWidgetAction` ActionCallback for widget-initiated refresh
+- Optimized widget update mechanism to prevent SharedPreferences race conditions
+- Build configuration improvements: `isMinifyEnabled = true`, `isShrinkResources = true`
+
+---
+
 ## [1.0.0] - 2026-02-10
 
 ### Added
@@ -71,4 +103,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[1.0.0]: https://github.com/yourusername/MotivationApp/releases/tag/v1.0.0
+[1.1.0]: https://github.com/naufalelghazy/MotivationApp/releases/tag/v1.1.0
+[1.0.0]: https://github.com/naufalelghazy/MotivationApp/releases/tag/v1.0.0
